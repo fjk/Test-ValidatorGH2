@@ -11,6 +11,6 @@ I'm using a command line tool that comes with common with LWP modules, but Postm
 > GET http://0:3000/api/server_time
 * {"now":"Sat Apr  8 13:48:42 2023"}
 
-> POST http://0:3000/api/cap -c 'application/json'
+lwp-request -m POST -c 'application/json'  http://localhost:3000/api/cap
 > { "cool story": "bro" }
 * {"cool story":"bro"}
